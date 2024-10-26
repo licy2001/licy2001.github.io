@@ -35,6 +35,13 @@
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
       <ul class="social about-footer {{condensed_class}}">
+        {%- if site.plainwhite.social_links.scholar -%}
+        <a href="{{ site.plainwhite.social_links.scholar }}" target="_blank">
+            <li>
+                <img src="{{ "/assets/scholar.png" | relative_url }}" alt="Google Scholar" style="width: 20px; height: 20px;">
+            </li>
+        </a>
+        {%- endif -%}
         {%- if site.plainwhite.social_links.github -%}
         <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
           <li>

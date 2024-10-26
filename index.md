@@ -12,7 +12,7 @@ My research interest  is computer vision, affective computing and AIGC, currentl
 
 - **I am looking for master students who are motivated, self-disciplined and optimistic.** &#10024;
 - **I am also expecting undergraduate students to contact me with your graduation projects.** &#129412;
-- `<b>`Contact me: jyyang@szu.edu.cn &#129303; `</b>`
+- **Contact me: jyyang@szu.edu.cn** &#129303; 
 
 # News
 
@@ -29,9 +29,9 @@ My research interest  is computer vision, affective computing and AIGC, currentl
 ---
 
 - **EmoGen: Emotional Image Content Generation with Text-to-Image Diffusion Models**
-  `<br>`**Jingyuan Yang**, Jiawei Feng, and Hui Huang\*
-  `<br>`Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition(**CVPR**), 6358-6368, 2024
-  `<br>`\[[Project page](https://vcc.tech/research/2024/EmoGen)\]\[[Code](https://github.com/JingyuanYY/EmoGen)\]\[[PDF](https://openaccess.thecvf.com/content/CVPR2024/html/Yang_EmoGen_Emotional_Image_Content_Generation_with_Text-to-Image_Diffusion_Models_CVPR_2024_paper.html)\]
+  **Jingyuan Yang**, Jiawei Feng, and Hui Huang\*
+  Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition(**CVPR**), 6358-6368, 2024
+  \[[Project page](https://vcc.tech/research/2024/EmoGen)\]\[[Code](https://github.com/JingyuanYY/EmoGen)\]\[[PDF](https://openaccess.thecvf.com/content/CVPR2024/html/Yang_EmoGen_Emotional_Image_Content_Generation_with_Text-to-Image_Diffusion_Models_CVPR_2024_paper.html)\]
 
   <div align="center">
     <img src="../assets/6.png" width="70%">

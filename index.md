@@ -8,11 +8,11 @@ title: "Chunyu Li"
 
 I am currently a master's student in the [School of Electronic Information of Wuhan University](http://eis.whu.edu.cn/). Prior to that, I received my B.E. the School of Communication Engineering, Jilin University in 2024.
 
-My research interest  is *Computer Vision*, Image Fusion, Image Enhancement and AIGC, currently with emphasis on Multimodal Image Fusion. 
+My research interest  is **Computer Vision**, **Image Fusion**, **Low-light Image Enhancement** and **AIGC**, currently with emphasis on **Multimodal Image Fusion**. 
 
 - **I am looking for master students who are motivated, self-disciplined and optimistic.** &#10024;
 - **I am also expecting undergraduate students to contact me with your graduation projects.** &#129412;
-- <b>Contact me: jyyang@szu.edu.cn &#129303; </b>
+- <b>Contact me: licy2001@gmail.com &#129303; </b>
 
 
 # News

@@ -29,6 +29,8 @@ plainwhite:
   social_links:
     #twitter: samarsault
     github:  licy2001
+    google scholar: https://scholar.google.com/citations?user=tliULs8AAAAJ&hl=zh-CN
+    email: licy0089@gmail.com
     #linkedIn: in/samarsault
     #dribbble: jekyll
     #flickr:   jekyll
@@ -39,7 +41,7 @@ plainwhite:
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
-    email: licy0089@gmail.com
+    
 
     # Mastodon instances
     # mastodon:

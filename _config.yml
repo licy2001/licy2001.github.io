@@ -1,7 +1,7 @@
 title: Chunyu Li
 author: Chunyu Li
 email: licy0089@gmail.com
-scholar: tliULs8AAAAJ&hl=zh-CN
+scholar: licy
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -31,13 +31,13 @@ plainwhite:
     #twitter: samarsault
     github:  licy2001
     email: licy0089@gmail.com
-    scholar: tliULs8AAAAJ&hl=zh-CN
+    # scholar: tliULs8AAAAJ&hl=zh-CN
     #linkedIn: in/samarsault
     #dribbble: jekyll
     #flickr:   jekyll
     #instagram: jekyll
     #pinterest: jekyll
-    # youtube: jekyll
+    #youtube: jekyll
     #facebook: jekyll
     #soundcloud: jekyll
     #telegram: jekyll

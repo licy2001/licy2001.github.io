@@ -35,14 +35,6 @@
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
       <ul class="social about-footer {{condensed_class}}">
-        {%- if site.plainwhite.social_links.scholar -%}
-        <a href="https://scholar.google.com/citations?user={{ site.plainwhite.social_links.scholar }}"
-        target="_blank">
-          <li>
-            <i class="icon-scholar"></i>
-          </li>
-        </a>
-        {%- endif -%}
         {%- if site.plainwhite.social_links.github -%}
         <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
           <li>
@@ -68,6 +60,14 @@
         <a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}" target="_blank">
           <li>
             <i class="icon-twitter-squared"></i>
+          </li>
+        </a>
+        {%- endif -%}
+        {%- if site.plainwhite.social_links.scholar -%}
+        <a href="https://scholar.google.com/citations?user={{ site.plainwhite.social_links.scholar }}"
+        target="_blank">
+          <li>
+            <i class="icon-scholar-circled"></i>
           </li>
         </a>
         {%- endif -%}

@@ -6,9 +6,9 @@ title: "Chunyu Li"
 
 --- 
 
-I am currently an Assistant Professor with the [Visual Computing Research Center (VCC)](https://vcc.tech/index.html) (headed by [Prof. Hui Huang](https://vcc.tech/~huihuang)) at the [College of Computer Science &amp; Software Engineering](https://csse.szu.edu.cn/), Shenzhen University. I received my Ph.D. in Information and Communication Engineering from Xidian University in 2022, supervised by [Prof. Xinbo Gao](https://see.xidian.edu.cn/faculty/xbgao/). Prior to that, I received my B.E. from the School of Electronic Engineering, Xidian University in 2017.
+I am currently a master's student in the [School of Electronic Information of Wuhan University](http://eis.whu.edu.cn/). Prior to that, I received my B.E. the School of Communication Engineering, Jilin University in 2024.
 
-My research interest  is computer vision, affective computing and AIGC, currently with emphasis on affective image manipulation. 
+My research interest  is `Computer Vision`, `Image Fusion`, `Image Enhancement` and `AIGC`, currently with emphasis on `Multimodal Image Fusion`. 
 
 - **I am looking for master students who are motivated, self-disciplined and optimistic.** &#10024;
 - **I am also expecting undergraduate students to contact me with your graduation projects.** &#129412;

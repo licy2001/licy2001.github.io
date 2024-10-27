@@ -14,6 +14,14 @@
 //   text-decoration: none;
 // }
 
+.social-icons li {
+  display: inline-block;
+}
+
+/* 针对第二个图标设置右侧的额外间距 */
+.social-icons li:nth-child(2) {
+  margin-right: 10px; /* 右侧增加额外的空隙 */
+}
 
 .switch {
     position: relative;

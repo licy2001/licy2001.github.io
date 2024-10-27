@@ -166,13 +166,13 @@ main {
     margin-bottom: 0.5em;
   }
   li {
-    margin-right: 25px;
+    margin-left: 15;
     i {
       font-size: 34px;
     }
-    &:nth-child(2) {
-      margin-right: 35px; /* 设置左边距 */
-    }
+    // &:nth-child(2) {
+    //   margin-right: 35px; /* 设置左边距 */
+    // }
   }
 }
 

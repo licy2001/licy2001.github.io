@@ -1,19 +1,19 @@
-li {
-  margin: 0; /* 清除默认的margin */
-  padding: 0; /* 清除默认的padding */
-}
-.icon {
-  margin-right: 20px; /* 给所有图标设置相同的右边距 */
-}
+// li {
+//   margin: 0; /* 清除默认的margin */
+//   padding: 0; /* 清除默认的padding */
+// }
+// .icon {
+//   margin-right: 20px; /* 给所有图标设置相同的右边距 */
+// }
 
-.social-icons li {
-  display: inline-block;
-}
+// .social-icons li {
+//   display: inline-block;
+// }
 
-/* 针对第二个图标设置右侧的额外间距 */
-.social-icons li:nth-child(3) {
-  margin-left: 20px; /* 左侧增加额外的空隙 */
-}
+// /* 针对第二个图标设置右侧的额外间距 */
+// .social-icons li:nth-child(3) {
+//   margin-left: 20px; /* 左侧增加额外的空隙 */
+// }
 
 .switch {
     position: relative;

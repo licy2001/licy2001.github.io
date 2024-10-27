@@ -159,14 +159,13 @@ main {
   list-style-type: none;
   padding: 0;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   a {
     margin-bottom: .5em;
   }
   li {
-    margin-right: 3px;
+    margin-right: 5px;
     i {
       font-size: 34px;
     }

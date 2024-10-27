@@ -163,18 +163,19 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   a {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
   li {
-    margin-right: 25px; 
+    margin-right: 25px;
     i {
       font-size: 34px;
     }
+    &:nth-child(3) {
+      margin-left: 10px; /* 设置左边距 */
+    }
   }
 }
-.social li:nth-child(3) {
-  margin-left: 10px; /* 设置左边距 */
-}
+
 
 .navigation {
   width: 80%;

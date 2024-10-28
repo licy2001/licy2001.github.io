@@ -181,11 +181,12 @@ main {
 
     &.svg {
       fill: currentColor; /* 设置svg的填充颜色 */
-    }
-
-    &.icon.svg {
       margin-left: 10px; /* 同时拥有icon和svg类的元素，设置不同的左边距 */
     }
+
+    // &.icon.svg {
+    //   margin-left: 10px; /* 同时拥有icon和svg类的元素，设置不同的左边距 */
+    // }
   }
 }
 

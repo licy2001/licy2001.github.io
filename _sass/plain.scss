@@ -176,18 +176,26 @@ main {
   }
 }
 
-// li {
-//   margin: 0; /* 清除默认的margin */
-//   padding: 0; /* 清除默认的padding */
-// }
-// .icon {
-//   margin-right: 20px; /* 给所有图标设置相同的右边距 */
-// }
+li {
+  margin: 0; /* 清除默认的margin */
+  padding: 0; /* 清除默认的padding */
+}
 
-// .social-icons li {
-//   display: inline-block;
-// }
+.icon {
+  margin-left: 20px; /* 给所有图标设置相同的左边距 */
+}
 
+.svg {
+  fill: currentColor; /* 所有svg类的元素设置其他样式，比如填充颜色 */
+}
+
+.icon.svg {
+  margin-left: 30px; /* 同时拥有icon和svg类的元素，设置不同的左边距 */
+}
+
+.social-icons li {
+  display: inline-block; /* 将社交图标列表项设置为inline-block */
+}
 // /* 针对第二个图标设置右侧的额外间距 */
 // .social-icons li:nth-child(3) {
 //   margin-left: 20px; /* 左侧增加额外的空隙 */

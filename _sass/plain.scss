@@ -156,12 +156,12 @@ main {
   }
 }
 
-.social-icons { /* 修改为.social-icons */
+.social-icons { /* 使用 social-icons 类 */
   list-style-type: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around; /* 或者使用 space-between，根据需求选择 */
 
   a {
     margin-bottom: 0.5em; /* 设置链接的底部边距 */
@@ -176,19 +176,16 @@ main {
     }
 
     &.icon {
-      margin-left: 3px; /* 所有icon类的元素设置左边距 */
+      /* margin-left: 3px; */ /* 不再需要单独的左边距 */
     }
 
     &.svg {
       fill: currentColor; /* 设置svg的填充颜色 */
-      margin-left: 9px; /* 给svg元素设置左边距 */
+      /* margin-left: 9px; */ /* 不再需要单独的左边距 */
     }
-
-    // &.icon.svg {
-    //   margin-left: 10px; /* 同时拥有icon和svg类的元素，设置不同的左边距 */
-    // }
   }
 }
+
 
 
 .navigation {

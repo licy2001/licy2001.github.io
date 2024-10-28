@@ -161,7 +161,7 @@ main {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* 或者使用 space-between，根据需求选择 */
+  justify-content: center; /* 或者使用 space-between，根据需求选择 */
 
   a {
     margin-bottom: 0.5em; /* 设置链接的底部边距 */

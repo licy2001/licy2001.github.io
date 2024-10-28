@@ -176,7 +176,7 @@ main {
     }
 
     &.icon {
-      margin-left: 20px; /* 所有icon类的元素设置左边距 */
+      margin-left: 10px; /* 所有icon类的元素设置左边距 */
     }
 
     &.svg {
@@ -184,7 +184,7 @@ main {
     }
 
     &.icon.svg {
-      margin-left: 18px; /* 同时拥有icon和svg类的元素，设置不同的左边距 */
+      margin-left: 9px; /* 同时拥有icon和svg类的元素，设置不同的左边距 */
     }
   }
 }

@@ -172,7 +172,7 @@ main {
     padding: 0; /* 清除默认的padding */
     
     i {
-      font-size: 34px; /* 图标字体大小 */
+      font-size: 35px; /* 图标字体大小 */
     }
 
     &.icon {
@@ -181,7 +181,7 @@ main {
 
     &.svg {
       fill: currentColor; /* 设置svg的填充颜色 */
-      margin-left: 0.5em; /* 不再需要单独的左边距 */
+      margin-left: 0.52em; /* 不再需要单独的左边距 */
     }
   }
 }

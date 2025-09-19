@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="{{ site.plainwhite.html_lang }}">
+ 
+<head>
+  {%- include head.html -%}
+</head>
+
+{%- if site.plainwhite.condensed_mobile contains page.layout -%}
+{% assign condensed_class = "condensed" %}
+{% else %}
+{% assign condensed_class = "" %}
+{%- endif -%}
+
+<body>
+  <main class="container">
+    <section class="about">
+      <div class="about-header {{condensed_class}}">
+      <div class="about-title">
+      <a href="{{ "/" | relative_url}}">
+        {% if site.plainwhite.portfolio_image_dark and site.plainwhite.dark_mode %}
+        <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
+        <img class="dark" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image_dark }}" alt="{{ site.plainwhite.name }}" />
+        {% else %}
+        <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
+        {% endif %}
+      </a> 
+      <h2 id="title">
+        <a href="{{ "/" | relative_url }}">{{ site.plainwhite.name }}</a>
+      </h2>
+      </div>
+      {%- if site.plainwhite.tagline -%}
+      <p class="tagline">{{ site.plainwhite.tagline }}</p>
+      {%- endif -%}
+      </div>
+      {% capture footer %}
+      {%- if site.plainwhite.social_links != '' -%}
+      <ul class="social about-footer {{condensed_class}}">
+      {%- if site.plainwhite.social_links.github -%}
+      <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
+        <li class="icon"> <!-- 添加 icon 类 -->
+          <i class="icon-github-circled"></i>
+        </li>
+          </a>
+          {%- endif -%}
+          {%- if site.plainwhite.social_links.email -%}
+          <a href="mailto:{{ site.plainwhite.social_links.email }}" target="_blank">
+            <li class="icon"> <!-- 添加 icon 类 -->
+              <i class="icon-mail-alt"></i>
+            </li>
+          </a>
+          {%- endif -%}
+          {%- if site.plainwhite.social_links.scholar -%}
+          <a href="https://scholar.google.com/citations?user={{ site.plainwhite.social_links.scholar }}" target="_blank">
+            <li class="svg"> <!-- 添加 svg 类 -->
+              <svg t="1729966341411" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1616" width="36" height="36">
+                <path d="M466.346667 87.253333c-23.338667 15.616-137.386667 91.306667-253.354667 168.32C96.938667 332.544 2.133333 396.202667 2.133333 396.970667c0 0.810667 5.802667 4.693333 13.013334 8.533333 7.125333 4.096 121.6 67.541333 254.506666 141.226667l241.322667 134.101333 6.144-3.157333c3.498667-1.706667 92.544-52.565333 198.058667-112.725334l191.701333-109.568 1.152 339.072h113.834667V397.610667l-147.626667-98.986667c-198.997333-133.290667-358.058667-238.336-361.984-239.189333-1.92-0.341333-22.485333 12.245333-45.909333 27.818666M228.48 709.674667l0.597333 85.546666 141.226667 84.778667 141.226667 84.565333 142.378666-85.333333 142.165334-85.546667V709.12c0-46.592-0.554667-84.608-1.152-84.608s-56.234667 33.365333-123.733334 74.282667l-141.056 85.162666-18.389333 10.922667-56.32-33.749333a25775.786667 25775.786667 0 0 1-140.202667-84.437334l-85.546666-51.626666c-1.024-0.341333-1.365333 37.674667-1.152 84.608" p-id="1617" fill="#000000"></path>
+              </svg>
+            </li>
+          </a>
+          {%- endif -%}
+      </ul>
+      {%- endif -%}
+      {%- if site.plainwhite.navigation -%}
+      <nav class="navigation about-footer {{condensed_class}}">
+        <ul>
+          {% for link in site.plainwhite.navigation %}
+          <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {%- endif -%}
+      <p class="about-footer {{condensed_class}}">&copy;
+        {{ "now" | date: "%Y" }}</p>
+      {%- if site.plainwhite.dark_mode -%}
+      <div class="about-footer {{condensed_class}}">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+      </div>
+      {%- endif -%}
+      {% endcapture %}
+      {{ footer }}
+    </section>
+    <section class="content">
+      {{ content }}
+    </section>
+    <footer class="{{condensed_class}}">
+      {{ footer }}
+    </footer>
+  </main>
+  {% if site.plainwhite.dark_mode %}
+  <script type="text/javascript" src="{{ "/assets/js/darkmode.js" | relative_url }}"></script>
+  {% endif %}
+
+  {%- if site.plainwhite.analytics_id -%}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.plainwhite.analytics_id }}');
+  </script>
+  {%- endif -%}
+
+  {% if site.plainwhite.search %}
+  <script src="{{ "/assets/js/simple-jekyll-search.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
+  {% endif %}
+</body>
+
+</html>

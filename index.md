@@ -9,9 +9,9 @@ title: "Chunyu Li"
 I am currently a master's student in the [School of Electronic Information of Wuhan University](http://eis.whu.edu.cn/). Prior to that, I received my B.E. the School of Communication Engineering, Jilin University in 2024.
 
 My research interest  is **Computer Vision**, **Image Fusion**, **Low-light Image Enhancement** and **AIGC**, currently with emphasis on **Multimodal Image Fusion**. 
-
+<!-- -
 - **I am looking for master students who are motivated, self-disciplined and optimistic.** &#10024;
-- **I am also expecting undergraduate students to contact me with your graduation projects.** &#129412;
+- **I am also expecting undergraduate students to contact me with your graduation projects.** &#129412; -->
 - <b>Contact me: licy2001@gmail.com &#129303; </b>
 
 
@@ -24,7 +24,7 @@ My research interest  is **Computer Vision**, **Image Fusion**, **Low-light Imag
 ---
 
 - **Mask-DiFuser: A Masked Diffusion Model for Unified Unsupervised Image Fusion**
-    <br>**Linfeng Tang\1**, Chunyu Li\1, and Jiayi Ma\*
+    <br>**Linfeng Tang, Chunyu Li, and Jiayi Ma\***
     <br>IEEE Transactions on Pattern Analysis and Machine Intelligence(**TPAMI**), 2025
     <br>\[[Project page](https://ieeexplore.ieee.org/abstract/document/11162636)\]\[[Code](https://github.com/licy2001)\]
     <div align="center">
@@ -53,4 +53,5 @@ My research interest  is **Computer Vision**, **Image Fusion**, **Low-light Imag
 <!-- - **English Speech** (First place in the Northwest Region Postgraduate English Speech Contest)
 - **Badminton** (Women's singles champion in the Freshmen Cup at Xidian Univeristy)
 - **Piano** (Amateur six level certificate of piano) -->
+
 

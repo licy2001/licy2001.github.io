@@ -1,0 +1,33 @@
+---
+interface Props { title?: string; description?: string; }
+const { title = 'Licy 的小窝', description = '记录代码、思考与生活。' } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#07111e" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✦%3C/text%3E%3C/svg%3E" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap');
+  :root { --void:#07111e; --night:#0d1e32; --surface:#edf2f0; --card:#f8fbfa; --ink:#12212d; --muted:#63757b; --mint:#26b99a; --line:rgba(18,33,45,.10); --white-line:rgba(238,250,255,.17); --shadow:0 20px 60px rgba(4,18,30,.14); }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--surface); color:var(--ink); font-family:'Noto Sans SC',system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  body::before { content:''; position:fixed; inset:0; z-index:20; pointer-events:none; opacity:.025; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  a { color:inherit; text-decoration:none; }
+  a:focus-visible, button:focus-visible { outline:3px solid var(--mint); outline-offset:4px; }
+  .skip-link { position:fixed; top:12px; left:12px; z-index:99; transform:translateY(-160%); padding:10px 14px; color:var(--void); background:#e7fff8; border-radius:10px; transition:transform .2s; }
+  .skip-link:focus { transform:translateY(0); }
+  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
+</style>

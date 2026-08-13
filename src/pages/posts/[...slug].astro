@@ -1,0 +1,13 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+export async function getStaticPaths() { const posts = await getCollection('posts'); return posts.map(post => ({ params:{ slug:post.id.replace(/\.md$/, '') }, props:{ post } })); }
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<Base title={`${post.data.title} · Licy 的小窝`} description={post.data.description}>
+  <main class="article"><a class="back" href="/">← 返回首页</a><p class="meta">{post.data.published.toLocaleDateString('zh-CN')} · {post.data.category}</p><h1>{post.data.title}</h1><p class="lead">{post.data.description}</p><div class="tags">{post.data.tags.map((tag:string) => <span>#{tag}</span>)}</div><article class="content"><Content /></article></main>
+</Base>
+<style>
+  .article { width:min(760px,calc(100% - 40px)); margin:0 auto; padding:70px 0 100px; }.back{display:inline-block;margin-bottom:65px;color:#168b75;font-size:14px}.meta{color:#5a8880;font:12px 'Roboto Mono',monospace}.article h1{margin:16px 0;font-size:clamp(36px,6vw,68px);line-height:1.04;letter-spacing:-.06em}.lead{margin:0;max-width:58ch;color:#566d74;line-height:1.8;font-size:17px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.tags span{padding:5px 9px;border-radius:7px;background:#e4f8f2;color:#258c78;font-size:12px}.content{margin-top:55px;padding-top:35px;border-top:1px solid var(--line);line-height:1.9;color:#253943}.content :global(h2){margin-top:45px;font-size:28px;letter-spacing:-.04em}.content :global(pre){padding:20px;border-radius:14px;overflow:auto}.content :global(a){color:#147e6a;text-decoration:underline}
+</style>

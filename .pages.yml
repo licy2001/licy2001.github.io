@@ -1,0 +1,68 @@
+media:
+  input: public/uploads
+  output: /uploads
+  categories: [image]
+  rename: safe
+
+content:
+  - name: posts
+    label: 博客文章
+    type: collection
+    path: src/content/posts
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{month}-{day}-{primary}.md"
+      field: create
+    view:
+      fields: [title, published, category, tags]
+      primary: title
+      sort: [published, title]
+      search: [title, description, category, tags]
+      default:
+        sort: published
+        order: desc
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: description
+        label: 摘要
+        type: text
+        required: true
+        description: 会显示在首页文章卡片中。
+        options:
+          maxlength: 180
+      - name: published
+        label: 发布日期
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: category
+        label: 分类
+        type: select
+        required: true
+        options:
+          values: [量化研究, 开发笔记, 随笔]
+      - name: tags
+        label: 标签
+        type: select
+        options:
+          multiple: true
+          values: [量化, 研究方法, 开发, 工具, 博客, 开始]
+      - name: featured
+        label: 首页推荐
+        type: boolean
+        default: false
+      - name: body
+        label: 正文
+        type: rich-text
+        required: true
+
+settings:
+  commit:
+    templates:
+      create: "docs: 发布文章 {title}"
+      update: "docs: 更新文章 {title}"
+      delete: "docs: 删除文章 {title}"
